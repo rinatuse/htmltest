@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" initial-scape="1.0" />
-    <title>Bastanov Rinat</title>
+    <title>My faborite places</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -14,12 +14,19 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
     <style>
-      .rounded-img {
-        width: 60%;
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        padding: 1em;
+      }
+      .card:hover {
+        background-color: rgba(0,0,0, 0.1);
+      }
+
+      .card img {
         border-radius: 50%;
-        box-shadow: 0 0 10px rgba(26, 9, 9, 0.2);
-        padding: 0.6em;
-        margin-bottom: 1em;
+        width: 60%;
+        margin: auto;
       }
     </style>
   </head>
@@ -44,10 +51,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="link.html">Link</a>
+              <a class="nav-link active" href="link.html">Link</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -86,31 +93,37 @@
         </div>
       </div>
     </nav>
-    <div class="container text-center my-5">
-      <div class="row">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <img src="bat.png" alt="Rinat photo" class="rounded-img" />
-          <h1 class="fw-light">Rinat Bastanov</h1>
-          <p class="lead text-muted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iure
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-            iure.. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dolor, iure.
-          </p>
-          <a
-            href="https:/stashchuk.com"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            My facebook
-          </a>
-          <a
-            href="https:/stashchuk.com"
-            target="_blank"
-            class="btn btn-secondary"
-          >
-            My YouTube
-          </a>
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img src="./bat.png" class="card-img-top" alt="My img">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./bat.png" class="card-img-top" alt="My img">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./bat.png" class="card-img-top" alt="My img">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
